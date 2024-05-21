@@ -9,7 +9,7 @@ temp_blueprint = Blueprint('temp_blueprint', __name__)
 
 
 
-@temp_blueprint.route('/', methods=['POST'])
-@temp_blueprint.route('/index', methods=['POST'])
+@temp_blueprint.route('/', methods=['GET'])
+@temp_blueprint.route('/index', methods=['GET'])
 def index():
     return "Hello, World!"
